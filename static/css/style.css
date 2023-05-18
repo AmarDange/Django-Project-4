@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------------------------------------------Nav bar buttons */
+#logo img {
+    border-radius: 50px;
+}
+
+.navbar {
+    background-color: #ff9933;
+}
+
+.navbar ul {
+    color: rgb(4, 0, 0);
+    font-size: large;
+}
+
+.dropdown {
+    margin: 4px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: ease-in-out;
+}
+
+/*------------------------------------------------------------Home page*/
+.carousel-item img {
+    height: 32vh;
+}
+
+.carousel-item h3 span {
+    color: #f7e23f;
+}
+
+.carousel-item p {
+    font-size: 1.2rem;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 12, 16, 0.6);
+}
+
+#destination h2 span {
+    color: #03736d;
+}
+
+#destination .card {
+    box-shadow: 1px 1px 5px 3px rgb(245, 196, 196);
+}
+
+/*------------------------------------------------------------Footer*/
+
+footer {
+    background-color: #ff9933;
+    color: rgb(0, 0, 0);
+}
+
+footer p a {
+    color: rgb(4, 30, 134);
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+
+footer a {
+    color: rgb(4, 30, 134);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #b8ebeb;
+    text-decoration: underline;
+}
+
+/*About Page*/
+#about .introduction {
+    border-bottom: thick double #fa0303;;
+}
+
+#about p,
+ul {
+    font-size: 1.2rem;
+}
+
+/*Blog Page*/
+#blog-page p {
+    font-size: 1.2rem;
+}
+
+#blog-page .card,
+#user-posts .card {
+    box-shadow: 1px 1px 5px 3px rgb(73, 95, 141);
+}
+
+#blog-page .des-heading,
+#destination-post .des-heading,
+#user-posts .des-heading {
+    background-color: rgba(15, 16, 16, 0.6);
+    color: #f7e23f;
+    line-height: 30px;
+}
+
+#blog-page .card-title,
+#destination-post .card-title,
+#user-posts .card-title {
+    color: black;
+    text-decoration: none;
+}
+
+/*Post and Destination*/
+#destination-post h2 span,
+#user-page h2 span,
+#user-posts h2 span,
+#update-post h2 span,
+#add-post h2 span {
+    color: #a00505;
+}
+
+#destinations .card {
+    box-shadow: 1px 1px 5px 3px rgb(245, 196, 196);
+}
+
+#destination-post .card {
+    box-shadow: 1px 1px 3px 2px #b8ebeb;
+}
+
+#destination-post .no-post-msg {
+    height: 200px;
+}
+
+#post-description .post-comment {
+    box-shadow: 1px 1px 5px 3px rgb(195, 191, 191);
+}
+
+/*----------------------------------------------Sign in, Sign up, Logout*/
+#signup .container,
+#signin .container,
+#logout .container {
+    height: auto;
+    box-shadow: 20px 20px 50px 10px #f0eccd inset;
+}
+
+#signup p,
+#signin p {
+    font-size: 1.2rem;
+}
+
+#logout p {
+    font-size: 1.4rem;
+}
+
+/*-------------------------------------------------------------Search*/
+#search .container,
+#delete-post .container {
+    height: auto;
+    box-shadow: 20px 20px 50px 10px #f1f4a3 inset;
+}
+
+/*--------------------------------------------------------Input Fields*/
+.input-fields input,
+.input-fields select,
+.input-fields textarea {
+    min-width: -webkit-fill-available;
+}
+
+.input-fields select option {
+    padding-left: 5px;
+}
+
+.control-group label {
+    font-size: 23px;
+}
+
+
+
+/* Media queries for different screen size*/
+
+@media screen and (min-width:485px) {
+    .carousel-item img {
+        height: 55vh;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .carousel-item img {
+        height: 70vh;
+    }
+}

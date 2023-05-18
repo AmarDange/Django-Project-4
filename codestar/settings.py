@@ -14,6 +14,8 @@ from pathlib import Path
 
 import os
 import dj_database_url
+from django.contrib.messages import constants as messages
+
 if os.path.isfile('env.py'):
     import env
 
@@ -33,6 +35,8 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
 ALLOWED_HOSTS = ['me-marathi2023.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
+
 
 
 # Application definition
@@ -43,11 +47,37 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'cloudinary_storage',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     'cloudinary',
-    'memarathi',
+    'django_summernote',
+    'crispy_forms',
+    'blog',
+    # 'comment',
+
 ]
+
+
+SITE_ID = 1
+ACCOUNT_EMAIL_VERIFICATION = 'none'
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
+
+MESSAGE_TAGS = {
+    messages.DEBUG: "alert-info",
+    messages.INFO: "alert-info",
+    messages.SUCCESS: "alert-success",
+    messages.WARNING: "alert-warning",
+    messages.ERROR: "alert-danger",
+}
+
+CRISPY_TEMPLATE_FORM = "bootstrap4"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -72,6 +102,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                # 'blog.views.destinations_list',
             ],
         },
     },
@@ -141,5 +172,3 @@ DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']

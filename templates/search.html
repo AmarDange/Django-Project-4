@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+{% load humanize %}
+{% load static %}
+{% block content %}
+<section class="my-5 min-vh-80" id="search">
+    <div class="container">
+        <div class="row justify-content-center">
+            {% if q %}
+            <h2 class="text-center my-4">
+                <strong>
+                    {% with results.count as total_results %}
+                    There are {{ total_results }} result{{ total_results|pluralize }} containing your search: "{{ q }}"
+                    {% endwith %}
+                </strong>
+            </h2>
+            {% for post in results %}
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="image-container">
+                            <a href="{% url 'post_detail' post.slug  %}">
+                                <h2 class="card-title">{{ post.title }}</h2>
+                            </a>
+                            <p class="text-muted">
+                                Author: {{ post.author }}
+                                <!-- Only users that are logged in can edit/ delete their own post -->
+                                {% if user.id == post.author.id %}
+                                <strong><a class="text-dark ms-2" href="{% url 'update-post' post.slug %}">
+                                        Edit</a></strong> |
+                                <strong><a class="text-danger" href="{% url 'delete-post' post.slug %}">
+                                        Delete</a></strong>
+                                {% endif %}
+                            </p>
+                        </div>
+                        <p class="card-text">{{post.content|slice:":280" | safe }} <a
+                                href="{% url 'post_detail' post.slug  %}" class="hidden-link">... continue reading
+                                &rarr;</a></p>
+                        <hr>
+                        <div class="card-footer">
+                            <span>{{ post.created_on}} | </span>
+                            <span><i class="fas fa-heart"></i> {{ post.number_of_likes }} </span>
+                            <span class="text-secondary"> | <i class="far fa-comments"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <div class="col-md-8 vh-90">
+                <h3 class="text-center mb-5">Sorry, currently there are no matching result.<br>
+                </h3>
+            </div>
+            {% endfor %}
+            {% else %}
+            <div class="results-empty">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center my-5">Hey, Look like you forgot to search for a post. <br>Please try
+                            searching again.</h2>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %}
