@@ -34,12 +34,12 @@ class AllBlogPost(generic.ListView):
 def PostDetail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    comments = Comment.objects.filter(post=post)
+    # comments = Comment.objects.filter(post=post)
     context = {
         "post": post,
-        "comments": comments,
+        # "comments": comments,
         "user": request.user,
-        "comment_form": CommentForm(),
+        # "comment_form": CommentForm(),
     }
     return render(request, "post_detail.html", context)
 

@@ -36,6 +36,7 @@ DEBUG = True
 # ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
 ALLOWED_HOSTS = ['me-marathi2023.herokuapp.com', 'localhost']
 ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 
@@ -102,7 +103,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 'blog.views.destinations_list',
+                'blog.views.destinations_list',
             ],
         },
     },
