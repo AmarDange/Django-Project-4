@@ -91,6 +91,20 @@ ul {
     font-size: 1.2rem;
 }
 
+
+
+/*Food Page*/
+#food .introduction {
+    border-bottom: thick double #fa0303;;
+}
+
+#food p,
+ul {
+    font-size: 1.2rem;
+}
+
+
+
 /*Blog Page*/
 #blog-page p {
     font-size: 1.2rem;
