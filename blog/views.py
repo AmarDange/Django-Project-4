@@ -154,6 +154,12 @@ def about(request):
     """
     return render(request, "about.html")
 
+def food(request):
+    """
+    Render the food page
+    """
+    return render(request, "food.html")
+
 
 class User(LoginRequiredMixin, generic.ListView):
     """
