@@ -44,10 +44,8 @@
                                     <h3 class="card-title mt-2">{{ post.title }}</h3>
                                 </a>
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><strong>Best Time: </strong> <span>{{ post.best_time
-                                            }}</span></li>
-                                    <li class="list-group-item"><strong>Ideal Duration: </strong> <span> {{
-                                            post.ideal_duration }}</span></li>
+                                    <li class="list-group-item"><strong>Best Time: </strong> <span>{{post.best_time}}</span></li>
+                                    <li class="list-group-item"><strong>Ideal Duration: </strong> <span> {{post.ideal_duration }}</span></li>
                                 </ul>
                                 <div class="card-text">
                                     {{ post.content | slice:":280" | safe }}...
