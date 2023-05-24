@@ -177,3 +177,43 @@ Please find my Kanban Board with my user stories
 	- Install crispy-forms to add styles to Django account templates with-  pip3 install crispy-bootstrap5
 - Intensive Manual Testing and Validation checks of each page and codes written
 - Final Deployment steps
+
+
+[Back to top](#content)
+
+## Design
+
+### Colours
+
+The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were modified using [Colorswall](https://colorswall.com/). 
+
+![Color Palette]
+
+### Typography
+
+Fonts were imported using Google Fonts. Roboto was used throughout with a backup of sans-serif. It was chosen for easy readability for users.
+
+### Imagery
+
+All the imagery is related to the Maharashtrain culture, food, tourist destination and website design. Some images including carousel are static. The remaining imagery was uploaded by the author to the database.
+
+### Wireframes
+
+## Database Diagram
+
+Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post, Author, Destination and Comment are shown in this diagram.
+
+![ER Diagram]
+
+
+[Back to top ⇧](#content)
+
+----
+
+# Features
+
+## Home Page
+
+At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
+
+![Homepage]
