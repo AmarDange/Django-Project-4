@@ -59,3 +59,25 @@ You can view the live site here:-
     - [Content](#content)
     - [Information Sources / Resources](#information-sources--resources)
   - [Acknowledgement](#acknowledgement)
+
+
+
+# User Experience - UX
+
+## Site Aims
+
+* Me Marathi is a website mainly meant to explore the Maharashtraian tourist destinattions with a good user experience.
+* The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
+* This website provides the user with the ability to read and view posts, as well as tools that allow users to search for a particular destination posts.
+* All users who sign up and sign in, can access the features of add post, like/unlike and comment on a blog post of this website.
+* User can access all the features of the website and can read, create, edit, and delete their own posts.
+
+## Agile Methodology
+
+The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board. Through the use of the Kanban board in the projects view in Github, the project was divided into a few different sections: 
+
+* To Do- (All the User stories were initially entered in the 'To Do' column)
+* In Progress- (then during development story they were moved into the 'In Progress' column)
+* Done- (and then finally they get moved into 'Done' once the development completes)
+
+Please find my Kanban Board with my user stories
