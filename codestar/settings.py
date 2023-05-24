@@ -35,8 +35,8 @@ DEBUG = True
 
 # ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
 ALLOWED_HOSTS = ['me-marathi2023.herokuapp.com', 'localhost']
-ALLOWED_HOSTS = ['8000-amardange-django-project-00x9o5p6um.us2.codeanyapp.com']
-ALLOWED_HOSTS = ['localhost']
+
+
 
 
 
