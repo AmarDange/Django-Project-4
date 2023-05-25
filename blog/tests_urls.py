@@ -28,6 +28,10 @@ class TestUrls(TestCase):
     def test_about_page_url(self):
         url = reverse('about')
         self.assertEqual(resolve(url).func, about)
+    
+    def test_food_page_url(self):
+        url = reverse('food')
+        self.assertEqual(resolve(url).func, about)
 
     def test_destinations_post_page_url(self):
         url = reverse('destinations-post', args=['some-str'])
@@ -68,4 +72,4 @@ class TestUrls(TestCase):
 
     def test_loged_in_user_can_delete_post(self):
         url = reverse('delete-post', args=['some-slug'])
-        self.assertEqual(resolve(url).func.view_
+        self.assertEqual(resolve(url).func.view_class, DeletePost)
