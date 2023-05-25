@@ -11,6 +11,11 @@ from .models import *
 from .forms import AddPostForm, UpdatePostForm
 from .forms import CommentForm
 # from comment.models import Comment
+from .models import Post
+from django.shortcuts import render, get_object_or_404
+
+
+
 
 
 class AllDestination(generic.ListView):
