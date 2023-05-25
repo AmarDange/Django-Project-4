@@ -34,7 +34,7 @@ class AllBlogPost(generic.ListView):
 def PostDetail(request, slug):
     queryset = Post.objects.filter(status=1)
     post = get_object_or_404(queryset, slug=slug)
-    # comments = Comment.objects.filter(post=post)
+    comments = Comment.objects.filter(post=post)
     context = {
         "post": post,
         # "comments": comments,

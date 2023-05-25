@@ -77,7 +77,26 @@ class UpdatePostForm(forms.ModelForm):
     }
 
 
+# class CommentForm(forms.ModelForm):
+#     class Meta:
+#         model = Comment
+#         fields = ('body',)
+
 class CommentForm(forms.ModelForm):
+    """
+    Form for post comment
+    """
+    body = forms.CharField(
+        widget=forms.Textarea(
+            attrs={
+                "class": "md-textarea form-control",
+                "placeholder": "Please enter your comment here..",
+                "rows": "6",
+            }
+        )
+    )
+
     class Meta:
+        # Choose fields to display from the Comment model
         model = Comment
-        fields = ('body',)
+        fields = ("body",)
