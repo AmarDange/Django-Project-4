@@ -18,9 +18,8 @@
                 </div>
                 <div class="content-description">
                     <h1 class="post-title">{{ post.title }}</h1>
-                    <h4 class="best-time"><strong>Best Time:-</strong> <span><small>{{post.best_time}}</small></span>
-                    </h4>
-                    <h4 class="duration"><strong>Ideal Duration:-</strong><span><small>{{post.ideal_duration}}</small></span></h4>
+                    <h4 class="best-time"><strong>Best Time:- </strong> <span><small>{{ post.best_time }}</small></span></h4>
+                    <h4 class="duration"><strong>Ideal Duration:- </strong><span><small> {{ post.ideal_duration }}</small></span></h4>
                 </div>
                 <p class="card-text">{{ post.content | safe }}</p>
                 <div class="row">
@@ -30,11 +29,9 @@
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                 {% csrf_token %}
                                 {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                        class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
                                 {% else %}
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
                                 {% endif %}
                             </form>
                             {% else %}
@@ -50,13 +47,11 @@
                     </div>
                 </div>
                 <!-- Only visible to the author of the post-->
-                {% if user.id == post.author.id %}
+                {% if user.id == post.author.id  %}
                 <div class="row">
                     <div class="d-flex justify-content-center">
-                        <a href="{% url 'update-post' post.slug  %}" role="button"
-                            class="btn btn-info mx-2 text-dark"><strong>Edit Post</strong> </a>
-                        <a href="{% url 'delete-post' post.slug  %}" role="button"
-                            class="btn btn-danger mx-2 text-light"><strong>Delete Post</strong></a>
+                        <a href="{% url 'update-post' post.slug  %}" role="button" class="btn btn-info mx-2 text-dark"><strong>Edit Post</strong> </a>
+                        <a href="{% url 'delete-post' post.slug  %}" role="button" class="btn btn-danger mx-2 text-light"><strong>Delete Post</strong></a>
                     </div>
                 </div>
                 {% endif %}
@@ -81,13 +76,11 @@
                                 <i class="fa-regular fa-comment"></i><span> {{ comment.body }}</span>
                             </div>
                             <!-- Only visible to the user who write this comment-->
-                            {% if user.is_authenticated and user.username == comment.name %}
+                            {% if user.is_authenticated and user.username == comment.name  %}
                             <div class="row">
                                 <div class="d-flex">
-                                    <a href="{% url 'edit_comment' comment.id  %}" role="button"
-                                        class="btn btn-secondary btn-sm mx-2"><strong>Edit</strong> </a>
-                                    <button type="button" class="btn-delete btn-sm btn-danger" data-bs-toggle="modal"
-                                        data-bs-target="#delete-comment">Delete</button>
+                                    <a href="{% url 'edit_comment' comment.id  %}" role="button" class="btn btn-secondary btn-sm mx-2"><strong>Edit</strong> </a>
+                                    <button type="button" class="btn-delete btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#delete-comment">Delete</button>
                                     <!-- Delete comment bootstrap modal-->
                                     <div class="modal fade" id="delete-comment" tabindex="-1" aria-hidden="true">
                                         <div class="modal-dialog">
@@ -99,10 +92,8 @@
                                                     Are you sure you want to delete your comment?
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
-                                                        data-bs-dismiss="modal">Close</button>
-                                                    <a href="{% url 'delete_comment' comment.id %}"
-                                                        class="btn btn-danger" aria-label="Delete Comment">Delete</a>
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <a href="{% url 'delete_comment' comment.id %}" class="btn btn-danger" aria-label="Delete Comment">Delete</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,8 +118,7 @@
                                 <button type=" submit" class="btn btn-signup btn-success mt-2">Submit</button>
                             </form>
                             {% else %}
-                            <h4>To like and comment a post, please <a href="{% url 'account_signup' %}">Sign up</a> or
-                                <a href="{% url 'account_login' %}">Sign in</a> first.</h4>
+                            <h4>To like and comment a post, please <a href="{% url 'account_signup' %}">Sign up</a> or <a href="{% url 'account_login' %}">Sign in</a> first.</h4>
                             {% endif %}
                         </div>
                     </div>

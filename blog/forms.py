@@ -2,6 +2,8 @@ from django_summernote.widgets import SummernoteWidget
 from .models import Post
 from django import forms
 from django.forms import ModelForm
+from .models import Comment
+from django import forms
 
 
 class AddPostForm(forms.ModelForm):
@@ -73,3 +75,9 @@ class UpdatePostForm(forms.ModelForm):
         "best_time": forms.TextInput(attrs={"class": "form-control"}),
         "ideal_duration": forms.TextInput(attrs={"class": "form-control"}),
     }
+
+
+class CommentForm(forms.ModelForm):
+    class Meta:
+        model = Comment
+        fields = ('body',)

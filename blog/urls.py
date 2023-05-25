@@ -28,4 +28,16 @@ urlpatterns = [
         views.DeletePost.as_view(),
         name="delete-post",
     ),
+
+        path("add_comment/<int:post_id>", views.add_comment, name="add_comment"),
+    path(
+        "edit_comment/<int:pk>",
+        views.EditComment.as_view(),
+        name="edit_comment",
+    ),
+    path(
+        "delete_comment/<int:comment_id>",
+        views.delete_comment,
+        name="delete_comment",
+    ),
 ]
