@@ -350,10 +350,88 @@ This page enlists all the blog posts added so far to the website. The blog posts
 
 
 
+----
+
+## Security
+In order to properly interact with the website, the user needs to have an account and sign in. This ensures security of their comments and gives them rights to create, modify and delete them.
+
+### Sign Up
+
+- User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signup.PNG">
+</details>
 
 
+- When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signsuccessfully.PNG">
+</details>
 
 
+### Sign In
+
+- User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signin.PNG">
+</details>
+
+- When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signinccessfully.PNG">
+</details>
+
+### Sign Out
+
+- If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signout.PNG">
+</details>
+
+- When users log out of the website they will see a message at the top of the page saying "You have signed out".
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/signoutsuceess.PNG">
+</details>
 
 
+## Search Button 
 
+On the top right corner, a search input field is provided along with a button to submit. This allows the user to try and find the post they are looking for.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/searchbutton.PNG">
+</details>
+
+- On the search results page, users can see posts related to their search. If there are posts for the user's search input, the user can click on the card result to go to the post detail page.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/searchoption.PNG">
+</details>
+
+- On the search results page, users will see this message if nothing is found for the search.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/nosearchoption.PNG">
+</details>
+
+- On the search results page, users will see this message for empty input.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/searchwithoutoption.PNG">
+</details>
