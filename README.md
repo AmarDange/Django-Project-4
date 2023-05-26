@@ -217,6 +217,16 @@ Smart Draw was used to create a database schema to visualise the types of custom
 At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
 
 <details>
-<summary>Homepager</summary>
+<summary>Homepage</summary>
 <img src = "assets/features/Homepage.PNG">
+</details>
+
+----
+
+- Upon scrolling down, there is destination section which indicates the available types of tourist destination blog post. Each destination card filter the post by destination name and navigate to that particular blog posts. 
+
+<details>
+<summary>Destination</summary>
+<img src = "assets/features/topcities.PNG">
+<img src = "assets/features/topcities1.PNG">
 </details>
