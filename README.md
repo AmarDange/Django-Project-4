@@ -216,4 +216,7 @@ Smart Draw was used to create a database schema to visualise the types of custom
 
 At the very first glimpse, user can see a Navigation menu with a search button and carousel-images on the homepage. Homepage provides the user with some quick information about the site and make use of all its features. User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages. 
 
-![Homepage]
+    <details>
+    <summary>Homepager</summary>
+    <img src = "assets/features/Homepage.PNG">
+    </details>
