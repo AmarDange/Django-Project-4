@@ -230,3 +230,130 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 <img src = "assets/features/topcities.PNG">
 <img src = "assets/features/topcities1.PNG">
 </details>
+
+----
+
+- User can also select a specific destination blog posts from the navbar dropdown which navigates to that specific destination blog posts.
+
+<details>
+<summary>Destination</summary>
+<img src = "assets/features/destination bar.PNG">
+</details>
+
+
+## Navbar
+
+- The navigation bar is present at the top of every page and navigates all links to the respective pages.
+- The options to Register or Log in will change to the option to log out once a user has logged in.
+- The navbar is fully responsive, collapsing into a hamburger menu when the screen size becomes smaller.
+
+<details>
+<summary>Navbar</summary>
+<img src = "assets/features/navbar.PNG">
+<img src = "assets/features/humburgerview.PNG">
+</details>
+
+## Navbar after loged in user
+
+* If the user is logged in (username Mahi is provided as an example here), navbar will be shown with user name and logout options. On a desktop, the navigation menu will appear as shown below:
+
+<details>
+<summary>Navbar</summary>
+<img src = "assets/features/afterlogin navbar.PNG">
+</details>
+
+
+## User Page
+
+* This page will be only visible to logged-in user. Navbar will show this page with the username on it. When the user clicks on his/her name in the navbar, the user navigates to the User page. On this user page, the user can create new posts or view his old posts list to edit and delete any of his posts.
+
+
+<details>
+<summary>Navbar</summary>
+<img src = "assets/features/afterlogin navbar.PNG">
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----
+
+## Footer
+
+- On the website footer, users can see basic information such as my social media, copyright, and a quote about Me Marathi.
+
+<details>
+<summary>Footer</summary>
+<img src = "assets/features/footer.PNG">
+</details>
+
+## About Page
+
+- The About Page gives, users information about the "Me Marathi" with a brief discription of the travel, food, culture, art of the Maharashtra.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/aboutpage1.PNG">
+<img src = "assets/features/aboutpage2.PNG">
+<img src = "assets/features/aboutpage3.PNG">
+<img src = "assets/features/aboutpage4.PNG">
+<img src = "assets/features/aboutpage5.PNG">
+</details>
+
+
+## Food Page
+
+- The Food Page gives, users information about the traditional food of the Maharashtra.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/foodpage1.PNG">
+<img src = "assets/features/foodpage2.PNG">
+<img src = "assets/features/foodpage3.PNG">
+</details>
+
+
+----
+
+## Blog Page
+
+This page enlists all the blog posts added so far to the website. The blog posts is paginated in a way that 9 posts are displayed. Further post can be accessed by clicking next button. Each blog post shows the image overlay with the destination type. The card body displays blog post title with specific fields and sliced post content along with the name of author, submitted date and shows the number of likes and comment icon in the card footer.
+
+<details>
+<summary>About Page</summary>
+<img src = "assets/features/blogpage1.PNG">
+<img src = "assets/features/blogpage2.PNG">
+<img src = "assets/features/blogpage3.PNG">
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
