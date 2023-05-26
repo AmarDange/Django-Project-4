@@ -11,8 +11,7 @@ from .models import *
 from .forms import AddPostForm, UpdatePostForm
 from .forms import CommentForm
 # from comment.models import Comment
-from .models import Post
-from django.shortcuts import render, get_object_or_404
+
 
 
 
@@ -49,6 +48,7 @@ def PostDetail(request, slug):
     return render(request, "post_detail.html", context)
 
 
+        
 class PostLike(View):
     """
     When a post is liked/unliked, the slug is noted
