@@ -10,8 +10,7 @@
                 <form method="POST" action="{% url 'delete-post' post.slug %}">
                     {% csrf_token %}
                     {{ form | crispy }}
-                    <h3 class="mt-5"> Hey {{ user }}, <br>Are you sure you want to delete your post named: "{{
-                        post.title }}"?</h3>
+                    <h3 class="mt-5"> Hey {{ user }}, <br>Are you sure you want to delete your post : "{{post.title}}"?</h3>
                     <a href="{% url 'delete-post' post.slug %}">
                         <button class="btn btn-lg btn-danger delete-btn my-3">Delete</button>
                 </form>

@@ -8,20 +8,25 @@ It targets best places for visit in  Maharashtra, where user can view the blog p
 
 You can view the live site here:- 
 
+![image](assets/features/amiresponsive.PNG)
+
 
 ## [Content](#content)
 - [Me Marathi- Introduction](#me-marathi---introduction)
   - [User Experience - UX](#user-experience---ux)
-    - [Site Aims](#site-aims)
+    - [User & Blog Goals](#User-&-Blog-Goals)
     - [Agile Methodology](#agile-methodology)
       - [Epics and User Stories](#epics-and-user-stories)
       - [Tasks](#tasks)
+
   - [Design](#design)
     - [Colours](#colours)
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
+
   - [Database Diagram](#database-diagram)
+
   - [Features](#features)
     - [Home Page](#home-page)
       - [Navbar](#navbar)
@@ -39,111 +44,205 @@ You can view the live site here:-
     - [Logout](#logout)
     - [Destinations](#destinations)
     - [Search Button](#search-button)
-    - [Alert Messages](#alert-messages)      
+    - [Alert Messages](#alert-messages)   
+
   - [Admin Panel/Superuser](#admin-panelsuperuser)
+
   - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Django Packages](#django-packages)
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+
   - [Testing](#testing)
       - [Validation](#validation)
       - [Manual Testing](#manual-testing)
+
   - [Bugs](#bugs)
       - [Fixed Bugs](#fixed-bugs)
       - [Unfix Bugs](#unfix-bugs)
+
   - [Deployment](#deployment)
       - [Creating the Django project](#creating-the-django-project)
       - [Creating Heroku app](#creating-heroku-app)
       - [Set up Environment Variables](#set-up-environment-variables)
       - [Heroku deployment](#heroku-deployment)
       - [Final Deployment](#final-deployment)
+
   - [Credits](#credits)
     - [Content](#content)
     - [Information Sources / Resources](#information-sources--resources)
+
   - [Acknowledgement](#acknowledgement)
 
 
 
 # User Experience - UX
 
-## Site Aims
+## User & Blog Goals
 
-* Me Marathi is a website mainly meant to explore the Maharashtraian tourist destinattions with a good user experience.
-* The site aims to provide user with a visually pleasing and informative website that is intuitive to use and easy to navigate.
-* This website provides the user with the ability to read and view posts, as well as tools that allow users to search for a particular destination posts.
-* All users who sign up and sign in, can access the features of add post, like/unlike and comment on a blog post of this website.
-* User can access all the features of the website and can read, create, edit, and delete their own posts.
+### Targeted User Goals:
+A user interested in visiting places.
+A user who wants enjoy & love to visit diffrent places.
+A user that wants a platform to share their own feedback.
 
+### Site User Goals:
+For users to be able to interact with the site intuitively.
+For users to be able to access and view all posts.
+For users to be able to read information oabout destination and related posts.
+For users to be able to create an account to access additional functionality.
+For registered users to be able to log in and out of their account.
+For registered users to be able to like and comment on all posts.
+For registered users to be able add, edit and delete their own comment.
+
+#### Blog Goals:
+Offers a platform to promote community and love for tourism.
+Provide registered users the access to like, comment and share recipes with full CRUD functionality.
+
+## Agile Methodology
+
+This blog was developed with agile planning. Each individual user feature was split into a user story. Each user story was defined and included an acceptance criteria. The acceptance criteria were tasks to mark as complete to complete the user story.
+
+Related user stories achieving a certain functionality of the blog were grouped together in to Epics.
+
+Each user story was labeled as Must Have, Should Have and Could Have to help prioritise which were most important to implement.
+
+As the blog evolved, tasks were added or updated, based on the changing needs / understanding of the what the blog should provide the user.
+
+This was implemented through Github Issues and the Kanban board in the projects view in Github, the project was divided into a few different sections:
+
+* To Do - All user stories were initially entered in the 'To Do' column
+* In Progress - During development stories were moved into the 'In Progress' column
+* Done - On completion they get moved into the 'Done' column
+* Future - Any 'could have' stories with features that I can look to implement at a later date, where due to time restraints I was unable to work on.
+
+Please find my Kanban Board with my user stories [here](https://github.com/users/AmarDange/projects/5/views/1).
 
 ## Epics and User Stories
 
 Following Epics were created which were further developed into below User Stories.
 
-### Epic 1- Website UI
-Epic Goals for User- 
-* An intuitive User Interface with easy to navigate throughout the website 
-* Easily see the purpose of the site from the landing page
-* View a list of destinations and blog posts
-* Search bar for quick and easy access to required information
+### Epic 1: Website UI Features
 
-#### Related User Stories:
-* As a site user I can easily see the purpose of the site from the landing page so that I can see if the site is relevant to my needs.
-* As a site user I can view a list of destinations so that I can see a list of posts relating to my specific interest.
-* As a site user I can view a paginated list of posts so that easily select a post to view.
-* As a site user I can click on a post so that I can read the full article.
-* As a site user I can use a search bar to search for a specific place so that I have quick and easy access to the information I need.
+User Story #1
 
-### Epic 2- Registration and Account Management
-Epic Goals-
-* Easy registration of an account
-* Easy Sign Up, Sign in and Sign Out
-* Upon signing in, the user should be able to like, comment on a blog post
-* Easy access to Create, Read, Update and Delete (CRUD) features upon signing in
-* Visibility of personalized blog posts and comments
+Site pagination (must have) - As a site user I can view a paginated list of posts so that easily select a post to view.
 
-#### Related User Stories:
-* As a site user, I can register an account so that I can comment and like.
-* As a registered user, I can login and logout of the site so that I can access my content.
-* As a site user, I can view the number of likes on each post so that I can see which is the most popular or viral.
-* As a site user, I can view comments on an individual post so that I can read the conversation.
-* As a registered user, I can create a post of tourist place so that I can share it with other.
+Acceptance Criteria:
+* As a site user I can view max 9 posts per page.
+* As a site user it is easy to navigate and view posts to pick which one I want to read.
 
-### Epic 3- Blog Post Management
-Epic Goals-
-* Create/ Update / Read / Delete blog posts.
-* View their created blog posts
-* Approve and publish a post
+User Story #2
 
-#### Related User Stories:
-* As a site admin, I can create draft posts so that I can finish writing the content later.
-* As a site admin/author, I can create, read, update and delete posts to manage the blog content.
-* As a site admin, I can delete any comment so that I can filter out objectionable comments.
-* As a author, I can access all my blog posts easily in one place so that I can easily track my activity on the site.
+View post (must have) - As a site user I can view a list of posts so that I can select one to read.
 
-### Epic 4- Comments and Like Management
-Epic Goals-
-* Add /Delete and View Comments on a post
-* Like / Unlike a post
+Acceptance Criteria:
+* As a site user, I can view posts submitted.
+* As a site user, I can view the image,  title and short description to help choose what to read.
 
-#### Related User Stories:
+User Story #3
+
+Open a post (must have) - As a site user I can click on a post so that I can read the full text.
+
+Acceptance Criteria:
+* Clicking on post opens a page where user can view the full post.
+
+User Story #4
+
+Search bar (could have) - As a site user I can use a search bar to search for a specific place so that I have quick and easy access to the information I want.
+
+Acceptance Criteria:
+* As a site user, I can easily find and navigate to the search bar.
+* As a site user, I can use the search bar to search by place name.
+* As a site user, I can view the results yielded by my search that I can click from.
+
+### Epic 2: Registration & Account Features
+
+User Story #5 
+
+Account registration (must have) - As a site user I can register an account so that I can submit my own post, comment and like.
+
+Acceptance Criteria:
+* As a site user, I intuitively know where to go to sign up.
+* As a site user, I can easily register my account without issue.
+
+User Story #6
+
+Login & logout (must have) - As a registered user, I can login and logout of the site so that I can have access to my account.
+
+Acceptance Criteria:
+* As a registered user, I can login and out successfully.
+
+User Story #7
+
+Comment on a post (must have) - As a registered user I can leave comments on a post.
+
+Acceptance Criteria:
 * As a logged-in user I can leave comments on a post so that I can be involved in the conversation.
-* As a logged-in user I can edit/delete my comments so that I can update/delete my post opinion.
+
+User Story #8
+
+Like/Unlke (must have) - As a site user I can like or unlike a post.
+
+Acceptance Criteria: 
 * As a logged-in user I can like or unlike a post so that I can interact with the content.
+
+User Story #9
+
+Add a recipe post (must have) - As a registered site user I can add a recipe post.
+
+Acceptance Criteria: 
+* As a logged-in user I can add a recipe so that I participate in growing the site.
+* As a logged-in user I can edit/delete my recipe so that I can update/delete my submission.
+
+User Story #10
+
+View my posts and likes (could have) - As a registered site user, I can access all my blog posts and likes easily in one place so that I can easily track my activity on the site.
+
+Acceptance Criteria: 
+* As a logged-in user I can view a page with a list of all my posts.
+* As a logged-in user I can view a page with a list of all my likes.
+
+### Epic 3: Blog Features
+
+User Story #11
+
+Manage posts (must have) - As a site admin I can create, read, update and delete posts so that I can manage my blog content.
+
+Acceptance Criteria: 
+* As a site admin, I can create new posts.
+* As a site admin, I can click and read posts.
+* As a site admin, I can edit and delete posts.
+
+User Story #12 
+
+Create drafts (should have) - As a site admin I can create draft posts so that I can finish writing the content later.
+
+Acceptance Criteria:
+* As a site admin I can start a draft post.
+* As a site admin I can return back to my account and finish my draft.
+* As a site admin I can then successfully post once ready.
+
+User Story #13
+
+View likes (must have) - As a site user, I can view the number of likes on each post so that I can see which is the most popular or viral.
+
+Acceptance Criteria:
+* As a site user, I can clearly view a symbol associated with likes on a post.
+* As a site user, I can view the number of likes next to the likes symbol.
+
+User Story #14
+
+View comments (must have) - As a site user, I can view comments on an individual post so that I can read the conversation.
+
+Acceptance Criteria:
+* As a site user, I can clearly view a symbol associated with comments on a post.
+* As a site user, I can view the number of comment next to the comments symbol.
+* I can click on the comments symbol to view the conversation.
 
 ## Tasks
 
 The tasks for the website development process was closely followed as mentioned in CI's Django module "I Think Therefore I Blog" walkthrough project. The task is generally the developers step towards preparing the app.
 The tasks that I have followed during the development phase were carried out in this order.
-## Agile Methodology
-
-The Agile Methodology was used to plan this project. This was implemented through Github and the Project Board. Through the use of the Kanban board in the projects view in Github, the project was divided into a few different sections: 
-
-* To Do- (All the User stories were initially entered in the 'To Do' column)
-* In Progress- (then during development story they were moved into the 'In Progress' column)
-* Done- (and then finally they get moved into 'Done' once the development completes)
-
-Please find my Kanban Board with my user stories
-
 
 **Before Project Inception**
 
@@ -187,9 +286,9 @@ Please find my Kanban Board with my user stories
 
 ### Colours
 
-The colour scheme has considered based on easy accessibility for all and have been consistently maintained throughout the website. The colours were modified using [Colorswall](https://colorswall.com/). 
+The termcolor module was used to print colored text.
 
-![Color Palette]
+Bright and bold colors were used throughout the website to draw the users attention for a specific purpose or engagement.
 
 ### Typography
 
@@ -269,34 +368,33 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 
 * This page will be only visible to logged-in user. Navbar will show this page with the username on it. When the user clicks on his/her name in the navbar, the user navigates to the User page. On this user page, the user can create new posts or view his old posts list to edit and delete any of his posts.
 
-
 <details>
-<summary>Navbar</summary>
+<summary>User Page</summary>
 <img src = "assets/features/afterlogin navbar.PNG">
 </details>
 
+* When user clicks on the 'Add New Post' button, following form will be displayed.
+
+![Add-post](assets/features/welcomeadmin.PNG)
+
+* If the user does not provide an image, the following default image will be presented.
+
+![Default-post-image](static/images/memaharashtraahe.jpg)
 
 
+* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
+
+![user-post-list]() 
+![edit-delete-post]()
+
+* If the user wants to edit his/her post, the following update form will be displayed with pre-filled content.
+
+![update-post](assets/features/editpost.PNG)
 
 
+* User can see the following message to make sure to delete his post.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![delete-post](assets/features/deletpost.PNG)
 ----
 
 ## Footer
@@ -347,9 +445,61 @@ This page enlists all the blog posts added so far to the website. The blog posts
 <img src = "assets/features/blogpage3.PNG">
 </details>
 
+## Post-Detail Page
+
+- When a user clicks on the image or title of the blog post, they are brought to the post details page for the selected blog post. Here the user is shown the complete details of the blog post with image, author name, created time, title, best time, ideal-duration, number of likes and comments along with full content.
+- Underneath the post description the page displays all the approved comments on that blog post posted by signed-in users. 
+- At the bottom of this page, the Comment box is visible to the users.
+
+<details>
+<summary>Post Detail Page</summary>
+<img src = "assets/features/postdetail1.PNG">
+<img src = "assets/features/postdetail2.PNG">
+<img src = "assets/features/tolikeandcomment.PNG">
+</details>
+
+- If user is signed-in, following comment box will appear. 
+
+<details>
+<summary>Comment Box</summary>
+<img src = "assets/features/postdetail3.PNG">
+</details>
+
+- When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
+
+![Comment-alert](assets/features/comment added.PNG)
+![Like post alert](assets/features/you liked post.PNG)
+![Unlike-post-alert](assets/features/unlikedpost.PNG)
+
+- Signed-in users can only edit/delete their own comments.
+
+![Edit Delete Comment](assets/features/edit-delete-comment.jpg)
+
+- When the user clicks on the delete button to remove his comment, following alert message pops up.
+
+![Delete Comment Alert](assets/features/delete-comment-alert.jpg)
 
 
+- User navigates to the edit-page when he clicks on the edit button. Here he can edit his comment text. 
+![Edit Comment](assets/features/edit-comment.jpg)
 
+- When user clicks on update button, a successful update alert message is displayed.
+
+![Update Comment Alert](assets/features/update-comment-alert.jpg)
+
+----
+
+## Destination Page
+
+User can select a specific destination blog posts either from destination section on home page or from the navbar dropdown which navigates to that specific destination blog posts.
+
+![Dropdown destination](assets/features/dropdown-destination.jpg)
+
+- For example, if user select a destination such as a hill station, the filtered blog posts will be displayed.
+![Filter destination posts](assets/features/selected-destination-post.jpg)
+
+- If there is no post for any selected destination, user will see the following message.
+![No post message](assets/features/no-destination-post.jpg)
 
 
 ----
