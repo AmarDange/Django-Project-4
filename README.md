@@ -1,5 +1,5 @@
-# Me Marathi 
-<span style="color: red"> Me Marathi </span>
+## Me Marathi 
+
 ![Me Marathi](static/images/Memarathi.jpg)
 
 **Me Marathi** blog website is developed using Django Framework as part of Portfolio Project 4 for my Diploma in Full Stack Software Development at Code Institute.
