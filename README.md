@@ -533,7 +533,7 @@ User can select a specific destination blog posts either from destination sectio
 <img src = "assets/features/destination bar.PNG">
 </details>
 
-- For example, if user select a destination such as a hill station, the filtered blog posts will be displayed.
+- For example, if user select a destination such as a Mumbai, Pune, the filtered blog posts will be displayed.
 
 <details>
 <summary>Filter destination posts</summary>
@@ -760,23 +760,19 @@ Testing has taken place continuously throughout the development of the project. 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 
-* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
+| I was not able to see comments on Post and not able to edit/delet comment. | Added User in Class Post Model |
 
-
-
-
-
-| **Unfix Bug** |
+| **Known Bug** |
 | ----------- |
 
-
-
+| At the time of addition of post on fronend, can not able to take status as option. I can only add post with name, image, best time. But I am not able to publish post on frontend. I have to go in Database and there i can publish. as per my understanding this is known bug but i can not work due to time constraint |
 
 
 ## Future Implementation
 
 * Automated testing for views functions 
 * Adding and displaying replies below corresponding comments on our blog
+* Adding Booking option for hotel
 
 [Back to top ⇧](#content)
 
@@ -895,8 +891,8 @@ In the IDE:
 
 ## Code
 - The basic set up of the website was done by strictly following the steps as described in Code Institue Full Stack Frameworks module - Django walkthrough project `"I Think Therefore I Blog"`.
-- Followed the project of one of my friend who is also a CI student ():  
-- Another project link I found from Linkdin, also CI's student ():
+- Followed the project of one of my friend who is also a CI student Jyoti Yadav  
+- Another project links I found from Slack community, also CI's student Fabiana Tacco
  
 
 ## Learning Resources
