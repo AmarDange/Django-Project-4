@@ -187,15 +187,15 @@ Acceptance Criteria:
 
 User Story #9
 
-Add a recipe post (must have) - As a registered site user I can add a recipe post.
+Add a post (must have) - As a registered site user I can add a post.
 
 Acceptance Criteria: 
-* As a logged-in user I can add a recipe so that I participate in growing the site.
-* As a logged-in user I can edit/delete my recipe so that I can update/delete my submission.
+* As a logged-in user I can add a post so that I participate in growing the site.
+* As a logged-in user I can edit/delete my post so that I can update/delete my submission.
 
 User Story #10
 
-View my posts and likes (could have) - As a registered site user, I can access all my blog posts and likes easily in one place so that I can easily track my activity on the site.
+View my comments / likes (could have) - As a registered site user, I can access all my blog posts and likes easily in one place so that I can easily track my activity on the site.
 
 Acceptance Criteria: 
 * As a logged-in user I can view a page with a list of all my posts.
@@ -205,7 +205,7 @@ Acceptance Criteria:
 
 User Story #11
 
-Manage posts (must have) - As a site admin I can create, read, update and delete posts so that I can manage my blog content.
+Manage (edit/delet) posts (must have) - As a site admin I can create, read, update and delete posts so that I can manage my blog content.
 
 Acceptance Criteria: 
 * As a site admin, I can create new posts.
