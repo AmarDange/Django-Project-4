@@ -541,7 +541,7 @@ In order to properly interact with the website, the user needs to have an accoun
 - When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
 
 <details>
-<summary>Welcome Page for signed in</summary>
+<summary>Message for signed in</summary>
 <img src = "assets/features/signinccessfully.PNG">
 </details>
 
