@@ -10,11 +10,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import *
 from .forms import AddPostForm, UpdatePostForm
 from .forms import CommentForm
-# from comment.models import Comment
-
-
-
-
+# from comment.models import comment
 
 
 class AllDestination(generic.ListView):
@@ -41,7 +37,7 @@ def PostDetail(request, slug):
     comments = Comment.objects.filter(post=post)
     context = {
         "post": post,
-        # "comments": comments,
+        "comments": comments,
         "user": request.user,
         "comment_form": CommentForm(),
     }

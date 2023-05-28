@@ -6,7 +6,7 @@
 
 It targets best places for visit in  Maharashtra, where user can view the blog post of tourist destinations, blog post and comments. When the user is logged in, user can like/unlike a post, comment on a post and add a post from the user page.
 
-You can view the live site here:- 
+You can view the live site here:-  https://me-marathi2023.herokuapp.com/ 
 
 ![image](assets/features/amiresponsive.PNG)
 
@@ -75,7 +75,6 @@ You can view the live site here:-
   - [Acknowledgement](#acknowledgement)
 
 
-
 # User Experience - UX
 
 ## User & Blog Goals
@@ -94,9 +93,9 @@ For registered users to be able to log in and out of their account.
 For registered users to be able to like and comment on all posts.
 For registered users to be able add, edit and delete their own comment.
 
-#### Blog Goals:
+### Blog Goals:
 Offers a platform to promote community and love for tourism.
-Provide registered users the access to like, comment and share recipes with full CRUD functionality.
+Provide registered users the access to like, comment with full CRUD functionality.
 
 ## Agile Methodology
 
@@ -260,7 +259,7 @@ The tasks that I have followed during the development phase were carried out in 
 - Set up Templates
 	- Create base.html - Navbar and Footer content, which gets extended to all the other template files
 	- Add responsiveness to navigation and footer
-    - Create index.html, view and style
+  - Create index.html, view and style
 	- Set up template file features with views.py and urls.py
   - about.html (Description about Me Marathi)
   - Food.html (Description about traditional food)
@@ -382,11 +381,6 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 ![Default-post-image](static/images/memaharashtraahe.jpg)
 
 
-* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
-
-![user-post-list]() 
-![edit-delete-post]()
-
 * If the user wants to edit his/her post, the following update form will be displayed with pre-filled content.
 
 ![update-post](assets/features/editpost.PNG)
@@ -439,7 +433,7 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 This page enlists all the blog posts added so far to the website. The blog posts is paginated in a way that 9 posts are displayed. Further post can be accessed by clicking next button. Each blog post shows the image overlay with the destination type. The card body displays blog post title with specific fields and sliced post content along with the name of author, submitted date and shows the number of likes and comment icon in the card footer.
 
 <details>
-<summary>About Page</summary>
+<summary>Blog Page</summary>
 <img src = "assets/features/blogpage1.PNG">
 <img src = "assets/features/blogpage2.PNG">
 <img src = "assets/features/blogpage3.PNG">
@@ -677,6 +671,8 @@ Testing has taken place continuously throughout the development of the project. 
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
+
+* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
 
 
 
