@@ -520,14 +520,12 @@ In order to properly interact with the website, the user needs to have an accoun
 <img src = "assets/features/signup.PNG">
 </details>
 
-
 - When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
 
 <details>
 <summary>Successfully signed</summary>
 <img src = "assets/features/signsuccessfully.PNG">
 </details>
-
 
 ### Sign In
 
@@ -669,6 +667,22 @@ The admin site for destination model appears as shown [here](assets/features/des
 ### Validation
 I used the following validation tools to validate HTML, CSS, PYTHON codes. Below the link of TESTING.md file, which includes all validation results.  
 - HTML using [W3C HTML validator](https://validator.w3.org/)
+  - result for [base.html](assets/testing/base.PNG)
+  - result for [index.html](assets/testing/index.PNG)
+  - Result for [about page](assets/testing/about.PNG)
+  - Result for [food page](assets/testing/food.PNG)
+  - Result for [blog page](assets/testing/blog.PNG)
+  - Result for [post-detail page](assets/testing/post detail page.PNG)
+  - Result for [destinations](assets/testing/destinations.PNG)
+  - Result for [destinations post](assets/testing/destinationspost.PNG)
+  - Result for [user post list](assets/testing/user post list.PNG)
+  - Result for [user page](assets/testing/user page.PNG)
+  - Result for [add-post page](assets/testing/add post.PNG)
+  - Result for [update post](assets/testing/update post.PNG)
+  - Result for [delete post](assets/testing/delet post.PNG)
+  - Result for [edit comment](assets/testing/edit comment.PNG)
+  - Result for [search page](assets/testing/Search.PNG)
+
 - CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
 - Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
 
