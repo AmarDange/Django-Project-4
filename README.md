@@ -419,7 +419,7 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 - The Food Page gives, users information about the traditional food of the Maharashtra.
 
 <details>
-<summary>About Page</summary>
+<summary>Food Page</summary>
 <img src = "assets/features/foodpage1.PNG">
 <img src = "assets/features/foodpage2.PNG">
 <img src = "assets/features/foodpage3.PNG">
@@ -487,14 +487,24 @@ This page enlists all the blog posts added so far to the website. The blog posts
 
 User can select a specific destination blog posts either from destination section on home page or from the navbar dropdown which navigates to that specific destination blog posts.
 
-![Dropdown destination](assets/features/dropdown-destination.jpg)
+<details>
+<summary>Dropdown destination</summary>
+<img src = "assets/features/destination bar.PNG">
+</details>
 
 - For example, if user select a destination such as a hill station, the filtered blog posts will be displayed.
-![Filter destination posts](assets/features/selected-destination-post.jpg)
+
+<details>
+<summary>Filter destination posts</summary>
+<img src = "assets/features/filteredpost.PNG">
+</details>
 
 - If there is no post for any selected destination, user will see the following message.
-![No post message](assets/features/no-destination-post.jpg)
 
+<details>
+<summary>No post message</summary>
+<img src = "assets/features/nopost.PNG">
+</details>
 
 ----
 
@@ -506,7 +516,7 @@ In order to properly interact with the website, the user needs to have an accoun
 - User is asked to enter username and password to sign up. User will be guided by validation messages if the username exists or password is too small which was created by modifying Django inbuilt templates.
 
 <details>
-<summary>About Page</summary>
+<summary>Sign Up</summary>
 <img src = "assets/features/signup.PNG">
 </details>
 
@@ -514,7 +524,7 @@ In order to properly interact with the website, the user needs to have an accoun
 - When users sign up to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
 
 <details>
-<summary>About Page</summary>
+<summary>Successfully signed</summary>
 <img src = "assets/features/signsuccessfully.PNG">
 </details>
 
@@ -524,14 +534,14 @@ In order to properly interact with the website, the user needs to have an accoun
 - User can enter username and password to sign in. User will be guided by validation messages if the username or password is not correct. This was created by modifying Django inbuilt templates.
 
 <details>
-<summary>About Page</summary>
+<summary>Sign In</summary>
 <img src = "assets/features/signin.PNG">
 </details>
 
 - When users sign in to the website they will see a message at the top of the page saying "Successfully signed in as (username)".
 
 <details>
-<summary>About Page</summary>
+<summary>Welcome Page for signed in</summary>
 <img src = "assets/features/signinccessfully.PNG">
 </details>
 
@@ -540,14 +550,14 @@ In order to properly interact with the website, the user needs to have an accoun
 - If the user is signed-in, then only they can see Logout nav-item in navbar. User will be taken to the Sign Out page. This was created by modifying Django inbuilt templates. When the user signs out, they are redirected to homepage.
 
 <details>
-<summary>About Page</summary>
+<summary>Sign Out</summary>
 <img src = "assets/features/signout.PNG">
 </details>
 
 - When users log out of the website they will see a message at the top of the page saying "You have signed out".
 
 <details>
-<summary>About Page</summary>
+<summary>Message for signed out</summary>
 <img src = "assets/features/signoutsuceess.PNG">
 </details>
 
@@ -557,28 +567,28 @@ In order to properly interact with the website, the user needs to have an accoun
 On the top right corner, a search input field is provided along with a button to submit. This allows the user to try and find the post they are looking for.
 
 <details>
-<summary>About Page</summary>
+<summary>Search Button</summary>
 <img src = "assets/features/searchbutton.PNG">
 </details>
 
 - On the search results page, users can see posts related to their search. If there are posts for the user's search input, the user can click on the card result to go to the post detail page.
 
 <details>
-<summary>About Page</summary>
+<summary>Search input</summary>
 <img src = "assets/features/searchoption.PNG">
 </details>
 
 - On the search results page, users will see this message if nothing is found for the search.
 
 <details>
-<summary>About Page</summary>
+<summary>No Search</summary>
 <img src = "assets/features/nosearchoption.PNG">
 </details>
 
 - On the search results page, users will see this message for empty input.
 
 <details>
-<summary>About Page</summary>
+<summary>Message for empty input</summary>
 <img src = "assets/features/searchwithoutoption.PNG">
 </details>
 
