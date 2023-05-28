@@ -23,7 +23,6 @@ You can view the live site here:-  https://me-marathi2023.herokuapp.com/
     - [Colours](#colours)
     - [Typography](#typography)
     - [Imagery](#imagery)
-    - [Wireframes](#wireframes)
 
   - [Database Diagram](#database-diagram)
 
@@ -298,13 +297,11 @@ Fonts were imported using Google Fonts. Roboto was used throughout with a backup
 
 All the imagery is related to the Maharashtrain culture, food, tourist destination and website design. Some images including carousel are static. The remaining imagery was uploaded by the author to the database.
 
-### Wireframes
-
 ## Database Diagram
 
 Smart Draw was used to create a database schema to visualise the types of custom models the project requires. This schema was used as a guide to what needed to be added to each model. Below is the Database structure that this project is based on. The relationship between Entities Post, Author, Destination and Comment are shown in this diagram.
 
-![ER Diagram]
+![Database Diagram](assets/Database_Diagram.jpg)
 
 
 [Back to top ⇧](#content)
@@ -356,7 +353,7 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 
 ## Navbar after loged in user
 
-* If the user is logged in (username Mahi is provided as an example here), navbar will be shown with user name and logout options. On a desktop, the navigation menu will appear as shown below:
+* If the user is logged in (username admin is provided as an example here), navbar will be shown with user name and logout options. On a desktop, the navigation menu will appear as shown below:
 
 <details>
 <summary>Navbar</summary>
@@ -375,21 +372,43 @@ At the very first glimpse, user can see a Navigation menu with a search button a
 
 * When user clicks on the 'Add New Post' button, following form will be displayed.
 
-![Add-post](assets/features/welcomeadmin.PNG)
+<details>
+<summary>Add Post</summary>
+<img src = "assets/features/welcomeadmin.PNG">
+</details>
 
 * If the user does not provide an image, the following default image will be presented.
 
-![Default-post-image](static/images/memaharashtraahe.jpg)
+<details>
+<summary>Default-post-image</summary>
+<img src = "static/images/memaharashtraahe.jpg">
+</details>
 
+* User can access all his posts by clicking on 'View Old Post' button. User can see the list of posts in this page which he has posted till now. Here he/she can edit or delete any of his post.
+
+<details>
+<summary>user-post-list</summary>
+<img src = "assets/features/viewoldpost.PNG">
+</details>
+<details>
+<summary>edit-delete-post</summary>
+<img src = "assets/features/editdeletpost.PNG">
+</details>
 
 * If the user wants to edit his/her post, the following update form will be displayed with pre-filled content.
 
-![update-post](assets/features/editpost.PNG)
+<details>
+<summary>update-post</summary>
+<img src = "assets/features/editpost.PNG">
+</details>
 
 
 * User can see the following message to make sure to delete his post.
 
-![delete-post](assets/features/deletpost.PNG)
+<details>
+<summary>delete-post</summary>
+<img src = "assets/features/deletpost.PNG">
+</details>
 ----
 
 ## Footer
@@ -462,25 +481,46 @@ This page enlists all the blog posts added so far to the website. The blog posts
 
 - When User submit a comment or like/unlike a post, following messages/ alert displays respectively.
 
-![Comment-alert](assets/features/comment added.PNG)
-![Like post alert](assets/features/you liked post.PNG)
-![Unlike-post-alert](assets/features/unlikedpost.PNG)
+<details>
+<summary></summary>
+<img src = "assets/features/commentadded.PNG">
+</details>
+<details>
+<summary>Like-post-alert</summary>
+<img src = "assets/features/youlikedpost.PNG">
+</details>
+<details>
+<summary>Unlike-post-alertt</summary>
+<img src = "assets/features/unlikedpost.PNG">
+</details>
 
 - Signed-in users can only edit/delete their own comments.
 
-![Edit Delete Comment](assets/features/edit-delete-comment.jpg)
+<details>
+<summary>Edit Delete Comment</summary>
+<img src = "assets/features/editdeletcomment.PNG">
+</details>
 
 - When the user clicks on the delete button to remove his comment, following alert message pops up.
 
-![Delete Comment Alert](assets/features/delete-comment-alert.jpg)
-
+<details>
+<summary>Delete Comment Alert</summary>
+<img src = "assets/features/deletcommentmessage.PNG">
+</details>
 
 - User navigates to the edit-page when he clicks on the edit button. Here he can edit his comment text. 
-![Edit Comment](assets/features/edit-comment.jpg)
+
+<details>
+<summary>Edit Comment</summary>
+<img src = "assets/features/editcomment.PNG">
+</details>
 
 - When user clicks on update button, a successful update alert message is displayed.
 
-![Update Comment Alert](assets/features/update-comment-alert.jpg)
+<details>
+<summary>Update Comment Alert</summary>
+<img src = "assets/features/commededitsuccess.PNG">
+</details>
 
 ----
 
