@@ -54,6 +54,7 @@ You can view the live site here:-  https://me-marathi2023.herokuapp.com/
     - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
 
   - [Testing](#testing)
+      - [Performance](#performance)
       - [Validation](#validation)
       - [Manual Testing](#manual-testing)
 
@@ -664,32 +665,55 @@ The admin site for destination model appears as shown [here](assets/features/des
 
 ## Testing
 
+### Performance
+
+#### Google's Lighthouse Performance
+
+##### Desktop Results:
+![Lighthouse Desktop Result](assets/testing/desktopperformance.PNG).
+
+##### Mobile Results:
+![Lighthouse Mobile Result](assets/testing/mobileperformance.PNG).
+
 ### Validation
-I used the following validation tools to validate HTML, CSS, PYTHON codes. Below the link of TESTING.md file, which includes all validation results.  
-- HTML using [W3C HTML validator](https://validator.w3.org/)
+I used the following validation tools to validate HTML, CSS, PYTHON codes. 
+
+- HTML using [W3C HTML validator](https://validator.w3.org/) was used to validate the HTML of the website.
+All the Django templates html files hava been manually copying the source of the rendered pages and then validating using the W3C Validator. I found some erros and warning messages but These do not seem to affect the functionality of the website.
+
   - result for [base.html](assets/testing/base.PNG)
   - result for [index.html](assets/testing/index.PNG)
   - Result for [about page](assets/testing/about.PNG)
   - Result for [food page](assets/testing/food.PNG)
   - Result for [blog page](assets/testing/blog.PNG)
-  - Result for [post-detail page](assets/testing/post detail page.PNG)
+  - Result for [post-detail page](assets/testing/postdetailpage.PNG)
   - Result for [destinations](assets/testing/destinations.PNG)
   - Result for [destinations post](assets/testing/destinationspost.PNG)
-  - Result for [user post list](assets/testing/user post list.PNG)
-  - Result for [user page](assets/testing/user page.PNG)
-  - Result for [add-post page](assets/testing/add post.PNG)
-  - Result for [update post](assets/testing/update post.PNG)
-  - Result for [delete post](assets/testing/delet post.PNG)
-  - Result for [edit comment](assets/testing/edit comment.PNG)
+  - Result for [user post list](assets/testing/userpostlist.PNG)
+  - Result for [user page](assets/testing/userpage.PNG)
+  - Result for [add-post page](assets/testing/addpost.PNG)
+  - Result for [update post](assets/testing/updatepost.PNG)
+  - Result for [delete post](assets/testing/deletepost.PNG)
+  - Result for [edit comment](assets/testing/editcomment.PNG)
   - Result for [search page](assets/testing/Search.PNG)
 
-- CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/)
+- CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) was used for validating the CSS stylesheet. CSS file was tested by manually copying the CSS codes into the manual input option.
+
+  - The result can be seen [here](assets/testing/cssvalidator.PNG).
+
 - Python via [PEP8 CI Python Linter](https://pep8ci.herokuapp.com/)
+
+  - Blog
+    * [admin.py](assets/testing/admin.PNG)
+    * [models.py](assets/testing/models.PNG)
+    * [forms.py](assets/testing/forms.PNG)
+    * [urls.py](assets/testing/urls.PNG)
+    * [views.py](assets/testing/views.PNG)
 
 ### Manual Testing
 Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render. All clickable links redirect to the correct pages.
 
-- Link for TESTING.md file:- [Testing Results Here](TESTING)
+  - Link for TESTING.md file:- [Testing Results Here](TESTING)
 
 ## Bugs
 

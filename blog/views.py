@@ -10,7 +10,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import *
 from .forms import AddPostForm, UpdatePostForm
 from .forms import CommentForm
-# from comment.models import comment
 
 
 class AllDestination(generic.ListView):

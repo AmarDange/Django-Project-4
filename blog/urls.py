@@ -3,8 +3,6 @@ from blog import views
 from django.urls import path, include
 
 urlpatterns = [
-    # path('', views.PostList.as_view(), name='home'),
-    # path('', views.index, name='memarathi'),
     path("post_detail/<slug:slug>/", views.PostDetail, name="post_detail"),
     path("", views.AllDestination.as_view(), name="home"),
     path("about", views.about, name="about"),
@@ -29,7 +27,7 @@ urlpatterns = [
         name="delete-post",
     ),
 
-        path("add_comment/<int:post_id>", views.add_comment, name="add_comment"),
+    path("add_comment/<int:post_id>", views.add_comment, name="add_comment"),
     path(
         "edit_comment/<int:pk>",
         views.EditComment.as_view(),
